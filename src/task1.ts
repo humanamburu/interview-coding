@@ -26,5 +26,5 @@ const movies = [
   }
 ]
 
-getMoviesStats(movies, 1972);
+getMoviesStatsByGenre(movies, 1972);
 // { crime: { averageRate: 8, titles: ['The Shawshank Redemption'] }, drama: {...} }

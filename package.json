@@ -1,0 +1,22 @@
+{
+  "name": "@harver/coding-task",
+  "version": "1.0.0",
+  "description": "Harver Coding Task",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanamburu/interview-coding.git"
+  },
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.2.1",
+    "ts-jest": "^27.0.0",
+    "ts-node": "^10.4.0"
+  }
+}
