@@ -14,17 +14,25 @@ const movies = [
     director: "Frank Darabont",
     duration: "2h 22min",
     genre: ["Crime", "Drama"],
-    rate: 9.3,
+    rate: 8,
   },
   {
     title: "The Godfather",
     year: 1972,
     director: "Francis Ford Coppola",
     duration: "2h 55min",
-    genre: ["Comedy"],
-    rate: 9.2,
+    genre: ["Comedy", "Crime"],
+    rate: 10,
+  },
+  {
+    title: "The Godfather",
+    year: 1970,
+    director: "The Batman",
+    duration: "2h 55min",
+    genre: ["Crime"],
+    rate: 10,
   }
 ]
 
 getMoviesStatsByGenre(movies, 1972);
-// { crime: { averageRate: 8, titles: ['The Shawshank Redemption'] }, drama: {...} }
+// { crime: { averageRate: 9, titles: ['The Shawshank Redemption', 'The Godfather' ] }, drama: {...} }
