@@ -11,7 +11,6 @@ const movies = [
   {
     title: "The Shawshank Redemption",
     year: 1994,
-    director: "Frank Darabont",
     duration: "2h 22min",
     genre: ["Crime", "Drama"],
     rate: 8,
@@ -19,7 +18,6 @@ const movies = [
   {
     title: "The Godfather",
     year: 1972,
-    director: "Francis Ford Coppola",
     duration: "2h 55min",
     genre: ["Comedy", "Crime"],
     rate: 10,
@@ -31,8 +29,25 @@ const movies = [
     duration: "2h 55min",
     genre: ["Crime"],
     rate: 10,
+  },
+  {
+    title: "Pokemons",
+    year: 1969,
+    duration: "2h 55min",
+    genre: ["Crime"],
+    rate: 5,
   }
 ]
 
-getMoviesStatsByGenre(movies, 1972);
-// { crime: { averageRate: 9, titles: ['The Shawshank Redemption', 'The Godfather' ] }, drama: {...} }
+getMoviesStatsByGenre(movies, 1970);
+// Returns the aggregation
+/* { 
+  crime: { 
+      averageRate: 9, 
+      titles: ['The Shawshank Redemption', 'The Godfather' ] 
+    }, 
+  drama: {
+    titles: ['The Shawshank Redemption']
+  } 
+}
+*/
