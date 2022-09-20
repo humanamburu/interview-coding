@@ -1,6 +1,13 @@
 
-// Implement a function that generates a stats object for the movies array in the format
-// { [genre]: { averageRating: number, titles: string[] }}
+/* 
+  Implement a function that generates a stats object for the movies array in the format:
+  { 
+    [genre]: { 
+      rates: number[], 
+      titles: string[] 
+    }
+  }
+*/
 const getMoviesStatsByGenre = (movies, startFromYear) => {
     // implementation
 };
@@ -39,15 +46,22 @@ const movies = [
   }
 ]
 
-getMoviesStatsByGenre(movies, 1970);
-// Returns the aggregation
+const stats = getMoviesStatsByGenre(movies, 1970);
+
+// Returns stats for the movies array:
+
 /* { 
   crime: { 
-      averageRate: 9, 
+      rates: [8, 10], 
       titles: ['The Shawshank Redemption', 'The Godfather' ] 
     }, 
   drama: {
-    titles: ['The Shawshank Redemption']
+    titles: ['The Shawshank Redemption'],
+    rates: [8]
+  } ,
+  comedy: {
+    titles: ['The Godfather'],
+    rates: [10]
   } 
 }
 */
